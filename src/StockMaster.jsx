@@ -1375,14 +1375,13 @@ export default function StockMaster() {
 
             if (!stock[pid]) stock[pid] = { total: 0, warehouses: {} };
 
-            let change = 0;
-            if (['Receipt', 'Initial', 'Adjustment', 'Transfer In'].includes(entry.type)) {
-                change = qty;
-            } else if (entry.type === 'Delivery') {
-                change = -qty;
-            } else if (entry.type === 'Transfer Out') {
-                change = qty; // Already negative in ledger
-            }
+            // All quantities are already signed correctly:
+            // - Receipts: positive (adds stock)
+            // - Deliveries: negative (removes stock)
+            // - Transfers: Transfer Out is negative, Transfer In is positive
+            // - Adjustments: can be positive or negative
+            // - Initial: positive
+            const change = qty;
 
             stock[pid].warehouses[wid] = (stock[pid].warehouses[wid] || 0) + change;
             stock[pid].total += change;
@@ -1397,7 +1396,8 @@ export default function StockMaster() {
             const targetEntry = { ...newEntry, quantity: transaction.quantity, warehouseId: transaction.targetWarehouseId, type: 'Transfer In', id: Date.now().toString() + '_2' };
             setLedger([...ledger, sourceEntry, targetEntry]);
         } else if (transaction.type === 'Delivery') {
-            setLedger([...ledger, { ...newEntry, quantity: transaction.quantity }]);
+            // Deliveries should reduce stock, so store as negative quantity
+            setLedger([...ledger, { ...newEntry, quantity: -transaction.quantity }]);
         } else {
             setLedger([...ledger, newEntry]);
         }
