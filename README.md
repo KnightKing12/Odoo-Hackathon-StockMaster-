@@ -252,41 +252,7 @@ StockMaster/
 └── postcss.config.js    # PostCSS configuration
 ```
 
----
 
-## 🔥 Firebase Integration
-
-### Setup Instructions
-
-1. **Create Firebase Project**
-   - Go to [Firebase Console](https://console.firebase.google.com/)
-   - Create a new project
-   - Enable Authentication & Firestore
-
-2. **Get Configuration**
-   - Project Settings → General → Your apps
-   - Copy Firebase config object
-
-3. **Update Configuration**
-   - Open `src/StockMaster.jsx`
-   - Replace `firebaseConfig` object (lines 60-67) with your credentials:
-
-```javascript
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
-```
-
-4. **Enable Firestore Collections**
-   - Create collections: `products`, `warehouses`, `ledger`
-   - Set up security rules as needed
-
----
 
 ## 🎨 Design Philosophy
 
