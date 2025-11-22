@@ -115,7 +115,7 @@ StockMaster is a comprehensive inventory management system designed to streamlin
 - **Beautiful Header** - Gradient background with user avatar
 - **Session Persistence** - Profile data saved locally
 
-
+---
 
 ## 🚀 Installation
 
@@ -320,16 +320,12 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👥 Authors
 
-- **KnightKing12** - *Initial work* - [GitHub](https://github.com/KnightKing12)
-- **BhaveshPathak125** - *Contributor* - [GitHub](https://github.com/BhaveshPathak125)
+- Bhavesh Pathak
+- Shivam Patel
+- Nipun Mahajan
+- Shashank Gupta
 
 ---
 
@@ -345,7 +341,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email your-email@example.com or open an issue in the GitHub repository.
+For support, email your-pathakbhavesh2005@gmail.com or open an issue in the GitHub repository.
 
 ---
 
