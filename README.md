@@ -5,7 +5,6 @@
 ![StockMaster Logo](https://img.shields.io/badge/StockMaster-IMS-blue?style=for-the-badge&logo=package&logoColor=white)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Firebase](https://img.shields.io/badge/Firebase-Ready-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 **A modern, feature-rich inventory management system built for the Odoo Hackathon**
@@ -116,23 +115,7 @@ StockMaster is a comprehensive inventory management system designed to streamlin
 - **Beautiful Header** - Gradient background with user avatar
 - **Session Persistence** - Profile data saved locally
 
----
 
-## 🎥 Demo
-
-### Login Screen
-![Login Screen](https://via.placeholder.com/800x450/1e293b/ffffff?text=Login+Screen+-+Glassmorphism+Design)
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x450/0f172a/ffffff?text=Dashboard+-+KPIs+%26+Charts)
-
-### Product Management
-![Product List](https://via.placeholder.com/800x450/1e293b/ffffff?text=Product+Management+-+Advanced+Filters)
-
-### Operations
-![Operations](https://via.placeholder.com/800x450/0f172a/ffffff?text=Operations+Center+-+Transaction+Forms)
-
----
 
 ## 🚀 Installation
 
